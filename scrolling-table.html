@@ -6,6 +6,33 @@
     <style>
         table {
             margin: 20px;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #ACD7E5FF;
+        }
+        td:first-child{
+            background-color: darkgreen;
+        }
+        tr:nth-child(even){
+            background-color: lightgrey;
+        }
+        th{
+            position: sticky;
+            top:0;
+            z-index: 1;
+        }
+        td:first-child{
+            position: sticky;
+            left: 0;
+            font-weight: bold;
+
+        }
+        #th0{
+            background-color: rebeccapurple;
+            position: sticky;
+            left: 0;
+            z-index: 2;
         }
     </style>
 </head>
@@ -13,7 +40,7 @@
 <table>
     <thead>
     <tr>
-        <th></th>
+        <th id="th0"></th>
         <th>Header 1</th>
         <th>Header 2</th>
         <th>Header 3</th>
@@ -21,7 +48,6 @@
         <th>Header 5</th>
     </tr>
     </thead>
-    <tbody>
     <tr>
         <td>Line 1</td>
         <td>23</td>
@@ -101,7 +127,6 @@
         <td>23</td>
         <td>23</td>
     </tr>
-    </tbody>
 </table>
 </body>
 </html>
